@@ -1,8 +1,37 @@
 <!DOCTYPE html>
 <head>
-<title>Testsida</title>
+<title>Tora Windahl</title>
 </head>
 <body>
-Bara en testsida
+
+<p>There is nothing here... have a random haiku error message:</p>
+<div id="haiku"></div>
+
+<script>
+var haiku = [
+"A file that big?<br/>It might be very useful.<br/>But now it is gone.",
+"Stay the patient course<br/>Of little worth is your ire<br/>The network is down",
+"Three things are certain:<br/>Death, taxes, and lost data.<br/>Guess which has occurred.",
+"You step in the stream,<br/>but the water has moved on.<br/>This page is not here.",
+"Out of memory.<br/>We wish to hold the whole sky,<br/>But we never will.",
+"Having been erased,<br/>The document you're seeking<br/>Must now be retyped.",
+"Rather than a beep<br/>Or a rude error message,<br/>These words: \"File not found.\"",
+"Serious error.<br/>All shortcuts have disappeared.<br/>Screen. Mind. Both are blank.",
+"The Web site you seek<br/>cannot be located but<br/>endless others exist",
+"Chaos reigns within.<br/>Reflect, repent, and reboot.<br/>Order shall return.",
+"ABORTED effort:<br/>Close all that you have.<br/>You ask way too much.",
+"First snow, then silence.<br/>This thousand dollar screen dies<br/>so beautifully.",
+"With searching comes loss<br/>and the presence of absence:<br/>\"My Novel\" not found.",
+"The Tao that is seen<br/>Is not the true Tao, until<br/>You bring fresh toner.",
+"A crash reduces<br/>your expensive computer<br/>to a simple stone.",
+"Error messages<br/>cannot completely convey.<br/>We now know shared loss."
+];
+
+var n = Math.floor(Math.random() * haiku.length)
+
+var div = document.getElementById("haiku");
+div.innerHTML = haiku[n];
+</script>
+
 </body>
 </html>
